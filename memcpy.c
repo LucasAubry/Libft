@@ -1,35 +1,27 @@
-void ft_memcpy(void *dest, const void *source, size_t size)
-{
-	int	i;
-	int	j;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   memcpy.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/20 01:44:34 by Laubry            #+#    #+#             */
+/*   Updated: 2023/10/20 01:44:35 by Laubry           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-	i = 0;
-	j = 0;
-	while (i < size)
-	{
-		dest[j] = source[j];
-		i++;
-		j++;
-	}
-	return (dest);
-
-}
-
-
-pas moi 
-
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *source, size_t size)
 {
 	size_t	i;
 	char	*s1;
 
 	s1 = (char *)dst;
 	i = 0;
-	while (i < n)
+	while (i < size)
 	{
-		*(char *)s1 = *(char *)src;
+		*(char *)s1 = *(char *)source;
 		s1++;
-		src++;
+		source++;
 		i++;
 	}
 	return (dst);

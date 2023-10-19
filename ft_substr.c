@@ -1,51 +1,14 @@
-char *ft_substr(char const *s, unsigned int start, size_t len)
-
-/*Alloue (avec malloc(3)) et renvoie une sous-chaîne de la chaîne 's'. La sous-chaîne commence à l’index « start »
- et a une taille maximale « len ».*/
-
-"j'aime les cordons bleu" 
-strat 7
-len 2
-"le" ('le's cordons)
-
-
-
-char *str;
-
-str = s;
-
-
-char chain [] = "une chaine";
-
-*s "une chaine" >>> chain[]
-
-start >>> le premier a copier 7 
-
-len >>> longueur 2
-
-char *str_allouer;
-
-str_allouer = (char *)malloc(len * sizeof(char) + 1)
-
-int i;
-int j;
-
-i = start;
-j = 0;
-
-
-[0] [1] [2]
-while(i <= len)
-
-7  8  9 10 
-
-char *str
-
-str = ft_substr(chain, 4, 7)
-
-
-
-//////////////////////////////////////////////////////
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/20 01:44:04 by Laubry            #+#    #+#             */
+/*   Updated: 2023/10/20 01:44:05 by Laubry           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
