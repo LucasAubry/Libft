@@ -1,4 +1,4 @@
-int	ft_tolower(int chr);
+int	ft_toupper(int chr);
 {
 	if (chr >= 97 && chr <= 122)
 		chr -= 32;
