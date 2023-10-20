@@ -6,9 +6,11 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:45:32 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:16:39 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 02:23:54 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int chr)
 {
