@@ -6,24 +6,24 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:42 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:22:34 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 02:49:00 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *ptr, int val, size_t cout);
+void *ft_memset(void *ptr, int val, size_t cout)
 {
-	char block;
+	char *block;
 	int	i;
 
-	block = (char *)ptr;
+	block = ptr;
 	i = 0;
-	while (len)
+	while (cout)
 	{
-		block[i] = val;
+		block[i] = (unsigned char)val;
 		i++;
-		len--;
+		cout--;
 	}
 	retrun (block);
 }

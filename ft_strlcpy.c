@@ -6,33 +6,34 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:45:04 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:23:12 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 02:43:24 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-src = cordon bleu
+/*src = cordon bleu
 size = 4
-dest = cordo
+dest = cordo*/
 
 
-size_t ft_strlcpy(char *dest, const chat *src, size_t size)
+size_t ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	int	i;
-	int	taille;
+	size_t	i;
+	size_t	taille;
 
 	i = 0;
-	taille = 0;
-	if (!dest || !src || size = 0)
+	taille = ft_strlen(src);
+	if (!dest || !src)
 		return (0);
-	while (dest[taille])
-		taille++;
-	while (src[i] != '\0' || i != size || i != taille)
+	if (taille != 0)
 	{
-		i++;
-		dest[i] = src[i];
+		while (src[i] != '\0' && i < (size -1)) 
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
 	}
-	dest[i +1] = '\0';
-	return (dest)
+	return (taille);
 }

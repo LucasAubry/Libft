@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:04 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:23:51 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 02:31:59 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,6 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 {
 	int i; 
 	char *str;
-
-	if (start >= s)
-		return (NULL);
 
 	i = 0;
 	str = (char *)malloc(len * sizeof(char) +1);

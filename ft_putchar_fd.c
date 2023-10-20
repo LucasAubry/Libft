@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:24 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:22:39 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 02:26:13 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void ft_putchar_fd(char c, int fd)
 {
-	write (fb, &c, 1);
+	write (fd, &c, 1);
 }

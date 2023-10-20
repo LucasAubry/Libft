@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Libft.h                                            :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:41:36 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:13:35 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 02:25:42 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void *ft_memset(void *ptr, int val, size_t cout);
 char ft_strchr(const char *str, int c);
 char *ft_stardup(const char *src);
 char ft_strcat(char *dest, const char *src);
-size_t ft_strlcpy(char *dest, const chat *src, size_t size);
+size_t ft_strlcpy(char *dest, const char *src, size_t size);
 size_t ft_strlen(const char *str);
 int	ft_strcmp(const char *str1, const char *str2);
 char	*ft_strnstr(const char *str, const char *needle, size_t len);
