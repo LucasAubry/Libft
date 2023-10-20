@@ -6,8 +6,13 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:40 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:22:55 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 15:23:03 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void ft_striteri(char *s, void (*f)(unsigned int, char*))
+{
+	
+}

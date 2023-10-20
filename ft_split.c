@@ -6,8 +6,13 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:36 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:22:47 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 16:01:02 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char **ft_split(char const *s, char c)
+{
+	
+},

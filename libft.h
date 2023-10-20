@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:41:36 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:25:42 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 16:03:18 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,9 @@ int	ft_bzero(void *str, int n);
 void	*ft_calloc(size_t nmemb, size_t size);
 char *ft_itoa(int n);
 void ft_putchar_fd(char c, int fd);
-
-
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void ft_putnbr_fd(int n, int fd);
 
 
 
