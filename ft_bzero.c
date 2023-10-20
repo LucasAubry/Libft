@@ -1,18 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tolower.c                                          :+:      :+:    :+:   */
+/*   tf_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 01:45:32 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 01:45:33 by Laubry           ###   ########.fr       */
+/*   Created: 2023/10/20 01:42:48 by Laubry            #+#    #+#             */
+/*   Updated: 2023/10/20 02:14:52 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int chr);
+int	ft_bzero(void *str, int n)
 {
-	if (chr >= 65 && chr <= 90)
-		chr += 32;
-	return (chr);
+		int	i;
+		int	nprim;
+
+		i = 0;
+		nprim = n;
+	while (nprim != 0;)
+	{
+		str[i] = 0;
+		i++;
+		nprim = n -1;
+	}
 }
+/* void	ft_bzero(void *s, size_t n)
+{
+	char		*i;
+
+	i = s;
+	while (n)
+	{
+		*i = 0;
+		i++;
+		n--;
+	}
+}
+*/

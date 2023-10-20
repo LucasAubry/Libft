@@ -6,11 +6,9 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:24 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 01:43:25 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 01:53:57 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 void ft_putchar_fd(char c, int fd)
 {

@@ -1,39 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bzero.c                                            :+:      :+:    :+:   */
+/*   toupper.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 01:42:48 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 01:42:53 by Laubry           ###   ########.fr       */
+/*   Created: 2023/10/20 01:45:37 by Laubry            #+#    #+#             */
+/*   Updated: 2023/10/20 02:01:15 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_bzero(void *str, int n)
+int	ft_toupper(int chr)
 {
-		int	i;
-		int	nprim;
-
-		i = 0;
-		nprim = n;
-	while (nprim != 0;)
-	{
-		str[i] = 0;
-		i++;
-		nprim = n -1;
-	}
+	if (chr >= 97 && chr <= 122)
+		chr -= 32;
+	return (chr);
 }
-/* void	ft_bzero(void *s, size_t n)
-{
-	char		*i;
-
-	i = s;
-	while (n)
-	{
-		*i = 0;
-		i++;
-		n--;
-	}
-}
-*/

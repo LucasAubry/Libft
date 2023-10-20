@@ -6,11 +6,11 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:42:34 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 01:42:40 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 02:13:41 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	moins;

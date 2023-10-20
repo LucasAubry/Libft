@@ -6,11 +6,11 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:45:14 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 01:45:15 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/20 02:12:40 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	strcmp(const char *str1, const char *str2)
+int	ft_strcmp(const char *str1, const char *str2)
 {
 	unsigned int	i;
 
