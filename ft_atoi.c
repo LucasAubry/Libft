@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:42:34 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:21:44 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/21 03:15:35 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,3 @@ int	ft_atoi(const char *str)
 	result *= moins;
 	return (result); 
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d\n", atoi("  -+--1234abc1243"));
-	return 0;
-}*/

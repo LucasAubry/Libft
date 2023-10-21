@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:59 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/21 00:04:00 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/21 03:06:55 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t ft_strlcat(char *dest, const char *src, size_t size)
 {
-	int tdest;
+	long unsigned int tdest;
 	int	tsrc;
-	int i;
+	long unsigned int i;
 
 	i = 0;
 	tdest = ft_strlen(dest);
