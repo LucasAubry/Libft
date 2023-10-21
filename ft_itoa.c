@@ -6,10 +6,13 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:19 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 14:22:05 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/21 15:01:59 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)return (itoa(n));
+char *ft_itoa(int n)
+{
+	
+} 

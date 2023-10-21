@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:56 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:23:47 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/21 14:48:25 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char ft_strtrim(char const *s1, char const *set)
 	j = 0;
 	while (s1[end] != '\0')
 		end++;
-	str = (char *)malloc(sizeof(char) * (end + 1))
+	str = (char *)malloc(sizeof(char) * (end + 1));
 	if (!str)
 		return (NULL);
 	while (set[j] != '\0')
@@ -49,10 +49,10 @@ char ft_strtrim(char const *s1, char const *set)
 			end--;
 		j++;
 	}
-	(char *)s1[end +1] = '\0'
+	(char *)s1[end +1] = '\0';
 	while (s1[start] != '\0')
 	{
-		str[i] = s1[start]
+		str[i] = s1[start];
 		s1[start]++;
 		i++;
 	}

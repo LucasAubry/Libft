@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:41:36 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/21 03:26:33 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/21 14:11:10 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void ft_putnbr_fd(int n, int fd);
 char **ft_split(char const *s, char c);
-
-
-
+void ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 char ft_strjoin (char *s1, char *s2);
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
