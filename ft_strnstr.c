@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:45:21 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/21 13:22:34 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/21 15:51:10 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
-	int i;
+	long unsigned int i;
 	int o;
 	char *dest;
 
 	i = 0;
 	o = 0;
 	if (s1[0] == '\0')
-		return (s1);
+		return ((char *)s1);
 	while (s1[i] != '\0' || i < len)
 	{
 		while (s1[i] == s2[o])
@@ -35,3 +35,4 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 		i++;
 	}
 	return (0);
+}
