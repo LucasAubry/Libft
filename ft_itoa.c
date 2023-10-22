@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:19 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/21 21:33:24 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/22 17:22:58 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int compteur(int n)
 char *ft_itoa(int n)
 {
 	int i;
-	long unsigned int nb;
+	int nb;
 	char *dest;
 
 	i = compteur(n) -1;

@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:45:14 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:23:29 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/22 17:24:59 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ int	ft_strcmp(const char *str1, const char *str2)
 			return ((unsigned char )str1[i] - (unsigned char)str2[i]);
 		i++;
 	}
-	retrun (0);
+	return (0);
 
 }

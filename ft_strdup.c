@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:53 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:22:52 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/22 17:10:03 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ char *ft_stardup(const char *src)
 	size = 0;
 
 
-	memoire(&size)
+	memoire(&size);
 	dest = (char *)malloc(size * sizeof(char));
 
 	if (dest == NULL)
-		retrun (NULL);
+		return (NULL);
 
 	while (src[i] != '\0')
 	{
@@ -41,7 +41,7 @@ char *ft_stardup(const char *src)
 	}
 	dest[i] = '\0';
 
-	return (*dest);
+	return (dest);
 }
 /*int main()
 {

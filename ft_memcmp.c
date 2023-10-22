@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:30 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:22:26 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/22 17:16:53 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int ft_memcmp(const void *ptr1, const void *ptr2, size_t s)
 {
-		int	i;
+		unsigned int	i;
 		unsigned const char *t1;
 		unsigned const char *t2;
 
@@ -23,11 +23,11 @@ int ft_memcmp(const void *ptr1, const void *ptr2, size_t s)
 		t2 = ptr2;
 		if (t1 == NULL || t2 == NULL)
 			return (0);
-	while (i < s)
-	{
-		if (t1[i] != t2[i])
-			return (t1[i] - t2[i]);
-		i++;
-	}
-	return (0);
+		while (i < s)
+		{
+			if (t1[i] != t2[i])
+				return (t1[i] - t2[i]);
+			i++;
+		}
+		return (0);
 }

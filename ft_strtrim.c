@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:56 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/21 14:48:25 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/22 16:57:48 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ resultat ; "cordon==bleu"
 s1 ; "hello"
 set ; helo
 resultat ; ""*/
-char ft_strtrim(char const *s1, char const *set)
+/*char ft_strtrim(char const *s1, char const *set)
 {
 	int start;
 	int end;
@@ -58,4 +58,4 @@ char ft_strtrim(char const *s1, char const *set)
 	}
 	str[i +1] = '\0';
 }
-return (str);
+return (str);*/
