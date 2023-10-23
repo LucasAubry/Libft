@@ -6,20 +6,20 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:42:48 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/22 17:23:39 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/23 16:35:11 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
 	{
-		((char *)s)[i] =0;
+		((char *)s)[i] = 0;
 		i++;
 	}
 }

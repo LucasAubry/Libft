@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:16 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:22:09 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/23 16:21:36 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ int	ft_isascii(int c)
 	if (c >= 0 && c <= 127)
 		return (1);
 	else
-		return (0); 
+		return (0);
 }

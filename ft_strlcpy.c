@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:45:04 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:43:24 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/23 15:38:30 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@
 size = 4
 dest = cordo*/
 
-
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	taille;
@@ -28,7 +27,7 @@ size_t ft_strlcpy(char *dest, const char *src, size_t size)
 		return (0);
 	if (taille != 0)
 	{
-		while (src[i] != '\0' && i < (size -1)) 
+		while (src[i] != '\0' && i < (size - 1))
 		{
 			dest[i] = src[i];
 			i++;

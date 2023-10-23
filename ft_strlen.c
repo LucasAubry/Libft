@@ -6,18 +6,18 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:45:09 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/20 02:23:20 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/23 15:34:29 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-		int	i;
+	int	i;
 
-		i = 0;
-		while (str[i])
-			i++;
-		return  ((size_t)i);
+	i = 0;
+	while (str[i])
+		i++;
+	return ((size_t)i);
 }

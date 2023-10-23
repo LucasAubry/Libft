@@ -6,19 +6,19 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:38 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/21 15:22:21 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/23 15:52:17 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t len)
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-	char *d;
-	char *s;
+	char				*d;
+	char				*s;
 	long unsigned int	i;
 
-	d = (char *)dest; 
+	d = (char *)dest;
 	s = (char *)src;
 	i = 0;
 	if (d > s)
