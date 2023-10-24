@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:49 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/23 16:32:43 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/24 22:43:47 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	i = 0;
 	dest = malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (!dest)
+		return (NULL);
 	while (s[i])
 	{
 		dest[i] = f(i, s[i]);
