@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:41:36 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/23 17:07:28 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/24 18:23:35 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ char				*ft_strjoin(char *s1, char *s2);
 void				ft_putstr_fd(char *s, int fd);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-char				ft_strtrim(char const *s1, char const *set);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
@@ -50,7 +49,7 @@ void				*ft_memcpy(void *dst, const void *source, size_t size);
 void				*ft_memmove(void *dest, const void *src, size_t len);
 void				*ft_memset(void *ptr, int val, size_t cout);
 char				*ft_strchr(const char *str, int c);
-char				*ft_stardup(const char *src);
+char				*ft_strdup(const char *src);
 char				ft_strcat(char *dest, const char *src);
 size_t				ft_strlcpy(char *dest, const char *src, size_t size);
 size_t				ft_strlen(const char *str);
@@ -61,5 +60,6 @@ char				*ft_strrchr(const char *str, int c);
 int					ft_tolower(int chr);
 int					ft_toupper(int chr);
 void				*ft_memchr(const void *s, int c, size_t n);
+char				*ft_strtrim(char const *s1, char const *set);
 
 #endif

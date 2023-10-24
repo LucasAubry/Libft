@@ -6,48 +6,33 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:45:21 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/22 16:58:25 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/23 22:03:34 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include "libft.h"
+#include "libft.h"
 
-char	*ft_strnstr(const char *s1, const char *s2, size_t len)
+char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	long unsigned int i;
-	int o;
-	char *dest;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
-	o = 0;
-	if (s1[0] == '\0')
+	j = 0;
+	if ((n == 0 && !s1) || !s2[0])
 		return ((char *)s1);
-	while (s1[i] != '\0' || i < len)
+	if (!s1[i])
+		return (NULL);
+	while (s1[i] && i < n)
 	{
-		while (s1[i] == s2[o])
+		while (s1[i + j] && s1[i + j] == s2[j] && i + j < n)
 		{
-			i++;
-			o++;
-			if (s1[i] == '\0' && s2[o] == '\0')
-				return (dest);
+			j++;
+			if (s2[j] == '\0')
+				return ((char *)s1 + i);
 		}
-		o = 0;
+		j = 0;
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
-
-
-
-
-
-
-
-
-
-
-
-char	*ft_strnstr(const char *s1, const char *s2, size_t len)
-{
-	
-}*/

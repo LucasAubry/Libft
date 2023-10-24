@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:45 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/23 15:50:34 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/23 21:52:02 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@ char	*ft_strchr(const char *str, int c)
 	int	i;
 
 	i = 0;
-	if (str == NULL)
-		return (NULL);
-	while (str[i])
+	while (str[i] && str != NULL)
 	{
-		if (str[i] == (char)c)
-			return ((char *)&str[i]);
+		if (str[i] == (const char)c)
+			return ((char *)str + i);
 		i++;
 	}
+	if (str[i] == (const char)c)
+		return ((char *)str + i);
 	return (NULL);
 }

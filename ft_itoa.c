@@ -6,13 +6,13 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:43:19 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/23 16:32:28 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/24 18:39:16 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	compteur(int n)
+static int	compteur(int n)
 {
 	int	o;
 
@@ -38,8 +38,8 @@ char	*ft_itoa(int n)
 		return (NULL);
 	if (nb < 0)
 	{
-		dest[0] = '-';
 		nb = -nb;
+		dest[0] = '-';
 	}
 	else if (nb == 0)
 		dest[0] = '0';

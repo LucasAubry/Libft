@@ -6,35 +6,35 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:30 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/23 16:09:06 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/24 18:20:17 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	memoire(int *s)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	while (*s != '\0')
-		(*s)++;
-}
-
-char	*ft_stardup(const char *src)
-{
-	int		i;
-	int		size;
-	char	*dest;
+	size_t	i;
+	char	*str;
 
 	i = 0;
-	size = 0;
-	memoire(&size);
-	dest = (char *)malloc(size * sizeof(char));
-	if (dest == NULL)
-		return (NULL);
-	while (src[i] != '\0')
+	if (ft_strlen(s) <= start)
 	{
-		dest[i] = src[i];
+		str = (char *)malloc(1);
+		if (!str)
+			return (NULL);
+		str[0] = '\0';
+		return (str);
+	}
+	str = (char *)malloc(len * sizeof(char) + 1);
+	if (!str)
+		return (NULL);
+	while (i < len)
+	{
+		str[i] = s[start];
+		start++;
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	str[i] = '\0';
+	return (str);
 }
