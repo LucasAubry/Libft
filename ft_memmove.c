@@ -6,7 +6,7 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 01:44:38 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/24 22:48:49 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/25 16:37:46 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,15 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-	char				*d;
-	char				*s;
-	long unsigned int	i;
+	unsigned char	*d;
+	unsigned char	*s;
+	size_t			i;
 
-	d = (char *)dest;
-	s = (char *)src;
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
 	i = 0;
+	if (src == NULL && dest == NULL)
+		return (NULL);
 	if (d > s)
 	{
 		while (len-- > 0)
