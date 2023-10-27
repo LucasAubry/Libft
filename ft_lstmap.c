@@ -6,13 +6,13 @@
 /*   By: Laubry <aubrylucas.pro@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 11:28:49 by Laubry            #+#    #+#             */
-/*   Updated: 2023/10/26 21:13:29 by Laubry           ###   ########.fr       */
+/*   Updated: 2023/10/27 08:14:14 by Laubry           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
- t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*newlist;
 	t_list	*tmp;
@@ -38,5 +38,3 @@
 	}
 	return (newlist);
 }
-
-pas compris 
